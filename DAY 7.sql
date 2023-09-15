@@ -1,3 +1,8 @@
+-- CASE 1
+SELECT mov_title 
+FROM movie
+WHERE mov_title LIKE 'The%'
+
 -- CASE 3
 select distinct(a.act_fname, d.dir_fname) fname_act_dan_director
 	from actor a		
