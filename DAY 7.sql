@@ -29,3 +29,12 @@ JOIN genres g ON g.gen_id = mg.gen_id
 GROUP BY g.gen_title
 
 -- CASE 5
+SELECT
+    CASE
+        WHEN mov_time < 100 THEN 'Short Movie'
+        WHEN mov_time > 130 THEN 'Long Movie'
+        ELSE 'Normal Movie'
+    END AS label_duration,
+    COUNT(*) AS number_of_movies
+FROM movie
+GROUP BY label_duration;
