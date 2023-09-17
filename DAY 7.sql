@@ -1,3 +1,9 @@
+-- KELOMPOK 8
+-- 1. Arsya Hendratno Putri
+-- 2. Fegi Anora
+-- 3. Jab Yoan Efendi
+-- 4. Zikri Muhammad Madani
+
 -- CASE 1
 SELECT mov_title 
 FROM movie
