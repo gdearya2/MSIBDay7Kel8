@@ -20,3 +20,12 @@ select distinct(a.act_fname, d.dir_fname) fname_act_dan_director
 	inner join director d
 	on d.dir_id = md.dir_id
 	order by fname_act_dan_director asc;
+
+-- CASE 4
+SELECT g.gen_title,COUNT(g.gen_title) AS Jumlah_Movies
+FROM movie m
+JOIN movie_genres mg ON mg.mov_id = m.mov_id
+JOIN genres g ON g.gen_id = mg.gen_id
+GROUP BY g.gen_title
+
+-- CASE 5
